@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>110 | Rayhanul</title>
     <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+    <link rel="shortcut icon" href="/Images/110.My_Logo.jpg" type="image/x-icon">
     <style>
         section{
             display: flex;
@@ -49,12 +50,15 @@
         }
         /* Home Section Styles Ends Here */
 
-        /* About Section Styles Ends Here */
+        /* About Section Styles Starts Here */
         .about{
           background-color: #3e84f45e;
           height: 570px;
         }
-        .about h1{
+        .about h1 ,.services-content h1{
+          text-align: center;
+          color: #32a953; 
+          font-weight: bold;
           margin: 50px 0;
         }
         .about-content{
@@ -81,6 +85,46 @@
           background-color: #32a9548f;
           border: 10px solid #3e85f4;
         }
+        /* About Section Styles Ends Here */
+
+        /* Service Section Styles Starts Here */
+        .services-content{
+          background-color: #32a9542d
+        }
+        .services{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          padding: 20px;
+        }
+        .service{
+          position: relative;
+        }
+        .service .up-box{
+          position: relative;
+          z-index: 2;
+          background-color: #89b2f5;
+          text-align: center;
+          padding: 0 10px;
+          padding-bottom: 20px;
+          width: 100%;
+          height: 100%;
+        }
+        .service .up-box p{
+          margin-bottom: 40px;
+        }
+        .service .low-box{
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          background-color: #3e85f4;
+          width: 100%;
+          height: 100%;
+          transition: 2s;
+        }
+        .up-box:hover + .low-box{
+          transform: rotate(5deg);
+        }
     </style>
 </head>
 <body>
@@ -103,7 +147,7 @@
                     <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#services-section">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#skills-section">Skills</a>
@@ -143,7 +187,7 @@
     <!-- The About Section Starts Here -->
     <section id="about">
       <div class="about" style="width: 940px;">
-        <h1 class="text-center" style="color: #32a953; font-weight: bold;">About Myself</h1>
+        <h1>About Myself</h1>
         <div class="about-content">
           <div class="about-writeup">
             <p>
@@ -156,6 +200,49 @@
           </div>
         </div>
     </div>
+    </section>
+    <!-- The About Section Ends Here -->
+
+    <!-- The Services Section Starts Here -->
+    <section id="services">
+      <div class="services-content" style="width:940px;">
+        <h1>Services</h1>
+        <div class="services">
+          <div class="service">
+            <div class="up-box position-relative">
+              <img src="" alt="">
+              <h3>Web Design</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique facere quibusdam officiis consequatur. Libero rerum vero, eveniet, ut dignissimos, 
+              </p>
+              <a class="btn btn-outline-primary rounded-pill position-absolute bottom-0 start-50 translate-middle-x" href="http://">Learn More</a>
+            </div>
+            <div class="low-box"></div>
+          </div>
+          <div class="service">
+            <div class="up-box">
+              <img src="" alt="">
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique facere quibusdam officiis consequatur. Libero rerum vero, eveniet, ut dignissimos, necessitatibus repellat sed ipsa facere vitae tempore ab eum architecto.
+              </p>
+              <a class="btn btn-outline-primary rounded-pill position-absolute bottom-0 start-50 translate-middle-x" href="http://">Learn More</a>
+            </div>
+            <div class="low-box"></div>
+          </div>
+          <div class="service">
+            <div class="up-box">
+              <img src="" alt="">
+              <h3>Graphics Design</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt similique facere quibusdam officiis consequatur. Libero rerum vero, eveniet, ut dignissimos, necessitatibus repellat sed ipsa facere vitae tempore ab eum architecto.
+              </p>
+              <a class="btn btn-outline-primary rounded-pill position-absolute bottom-0 start-50 translate-middle-x" href="http://">Learn More</a>
+            </div>
+            <div class="low-box"></div>
+          </div>
+        </div>
+      </div>
     </section>
 </body>
 </html>
