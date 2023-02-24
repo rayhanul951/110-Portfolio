@@ -26,7 +26,7 @@
             color: #3e85f4;
             text-decoration:3px solid underline;
         }
-        /* Home Section Style Starts Here */
+        /* Home Section Styles Starts Here */
         .cover{
             display: flex;
             flex-direction: row;
@@ -47,7 +47,40 @@
             width: 50%;
             padding-top: 10%;
         }
-        /* Home Section Style Starts Here */
+        /* Home Section Styles Ends Here */
+
+        /* About Section Styles Ends Here */
+        .about{
+          background-color: #3e84f45e;
+          height: 570px;
+        }
+        .about h1{
+          margin: 50px 0;
+        }
+        .about-content{
+          display: flex;
+          flex-direction: row; 
+        }
+        .about-writeup{
+          width: 50%;
+          padding-left: 50px;
+          padding-top: 30px;
+        }
+        .about-writeup p{
+          font-size: 25px;
+        }
+        .about-photo{
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .about-photo img{
+          width: 80%;
+          border-radius: 50%;
+          background-color: #32a9548f;
+          border: 10px solid #3e85f4;
+        }
     </style>
 </head>
 <body>
@@ -110,15 +143,17 @@
     <!-- The About Section Starts Here -->
     <section id="about">
       <div class="about" style="width: 940px;">
-        <h1>About Myself</h1>
-        <div class="about-writeup">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero architecto, natus eaque optio laboriosam sunt qui. Enim doloremque porro eligendi harum odio ut, quod nesciunt, maiores tenetur ab ratione!
-          </p>
-          <a class="btn btn-outline-primary rounded-pill" href="http://">Contact Me</a>
-        </div>
-        <div class="about-photo">
-            <img src="/Images/My-Photo-Circuler.png" alt="" srcset="">
+        <h1 class="text-center" style="color: #32a953; font-weight: bold;">About Myself</h1>
+        <div class="about-content">
+          <div class="about-writeup">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero architecto, natus eaque optio laboriosam sunt qui. Enim doloremque porro eligendi harum odio ut, quod nesciunt, maiores tenetur ab ratione!
+            </p>
+            <a class="btn btn-outline-primary rounded-pill" href="http://">Contact Me</a>
+          </div>
+          <div class="about-photo">
+              <img src="/Images/My-Photo-Circuler.png" alt="" srcset="">
+          </div>
         </div>
     </div>
     </section>
