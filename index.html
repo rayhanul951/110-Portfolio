@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>110 | Rayhanul</title>
+    <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+    <style>
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container{
+            width: 940px;
+        }
+        .navbar-brand{
+            transition: 1s;
+        }
+        .navbar-brand:hover{
+            -webkit-transform: scaley(-1);
+            transform: scaley(-1);
+        }
+        .nav-link:hover{
+            color: #3e85f4;
+            text-decoration:3px solid underline;
+        }
+        /* Home Section Style Starts Here */
+        .cover{
+            display: flex;
+            flex-direction: row;
+            padding-top: 5%;
+            background-color: #32a9542d;
+            height: 50%;
+        }
+        .cover-photo{
+            width: 50%;
+        }
+        .cover-photo img{
+            width: 70%;
+            margin-left: 15%;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .introduction{
+            width: 50%;
+            padding-top: 10%;
+        }
+        /* Home Section Style Starts Here */
+    </style>
+</head>
+<body>
+    <script src="/Bootstrap/JS/bootstrap.min.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#home" style="font-size: 1.5rem;">
+                <span style="color: #3e85f4; font-weight: 700;">Rahul</span><span style="color: #32a953; font-weight: 700;">Rayhan</span>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1.2rem; font-weight: 700; text-align: center;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services-section">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills-section">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sample-section">Sample</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- The Home Section Starts Here -->
+    <section id="home">
+        <div class="cover" style="width: 940px;">
+            <div class="cover-photo">
+                <img src="/Images/My-Photo.png" alt="" srcset="">
+            </div>
+            <div class="introduction">
+                <h2 style="color: #3e85f4; font-weight: 700;">Welcome to my Portfolio <br>
+                    Website
+                </h2>
+                <h1 style="color: #32a953; font-weight: bold;">Rayhanul Islam Rahul</h1>
+                <h2 style="color: #3e85f4; font-weight: 700;">I Am A Freelancer</h2>
+                <a class="btn btn-outline-primary rounded-pill" href="http://">Hire Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- The Home Section Ends Here -->
+
+    <!-- The About Section Starts Here -->
+    <section id="about">
+      <div class="about" style="width: 940px;">
+        <h1>About Myself</h1>
+        <div class="about-writeup">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero architecto, natus eaque optio laboriosam sunt qui. Enim doloremque porro eligendi harum odio ut, quod nesciunt, maiores tenetur ab ratione!
+          </p>
+          <a class="btn btn-outline-primary rounded-pill" href="http://">Contact Me</a>
+        </div>
+        <div class="about-photo">
+            <img src="/Images/My-Photo-Circuler.png" alt="" srcset="">
+        </div>
+    </div>
+    </section>
+</body>
+</html>
