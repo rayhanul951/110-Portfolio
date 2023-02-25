@@ -6,126 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>110 | Rayhanul</title>
     <link rel="stylesheet" href="/Bootstrap/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="shortcut icon" href="/Images/110.My_Logo.jpg" type="image/x-icon">
-    <style>
-        section{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container{
-            width: 940px;
-        }
-        .navbar-brand{
-            transition: 1s;
-        }
-        .navbar-brand:hover{
-            -webkit-transform: scaley(-1);
-            transform: scaley(-1);
-        }
-        .nav-link:hover{
-            color: #3e85f4;
-            text-decoration:3px solid underline;
-        }
-        /* Home Section Styles Starts Here */
-        .cover{
-            display: flex;
-            flex-direction: row;
-            padding-top: 5%;
-            background-color: #32a9542d;
-            height: 50%;
-        }
-        .cover-photo{
-            width: 50%;
-        }
-        .cover-photo img{
-            width: 70%;
-            margin-left: 15%;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .introduction{
-            width: 50%;
-            padding-top: 10%;
-        }
-        /* Home Section Styles Ends Here */
-
-        /* About Section Styles Starts Here */
-        .about{
-          background-color: #3e84f45e;
-          height: 570px;
-        }
-        .about h1 ,.services-content h1{
-          text-align: center;
-          color: #32a953; 
-          font-weight: bold;
-          margin: 50px 0;
-        }
-        .about-content{
-          display: flex;
-          flex-direction: row; 
-        }
-        .about-writeup{
-          width: 50%;
-          padding-left: 50px;
-          padding-top: 30px;
-        }
-        .about-writeup p{
-          font-size: 25px;
-        }
-        .about-photo{
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .about-photo img{
-          width: 80%;
-          border-radius: 50%;
-          background-color: #32a9548f;
-          border: 10px solid #3e85f4;
-        }
-        /* About Section Styles Ends Here */
-
-        /* Service Section Styles Starts Here */
-        .services-content{
-          background-color: #32a9542d
-        }
-        .services{
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 20px;
-          padding: 20px;
-        }
-        .service{
-          position: relative;
-        }
-        .service .up-box{
-          position: relative;
-          z-index: 2;
-          background-color: #89b2f5;
-          text-align: center;
-          padding: 0 10px;
-          padding-bottom: 20px;
-          width: 100%;
-          height: 100%;
-        }
-        .service .up-box p{
-          margin-bottom: 40px;
-        }
-        .service .low-box{
-          position: absolute;
-          top: 0;
-          z-index: 1;
-          background-color: #3e85f4;
-          width: 100%;
-          height: 100%;
-          transition: 2s;
-        }
-        .up-box:hover + .low-box{
-          transform: rotate(5deg);
-        }
-    </style>
 </head>
 <body>
     <script src="/Bootstrap/JS/bootstrap.min.js"></script>
@@ -150,13 +32,13 @@
                     <a class="nav-link" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#skills-section">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sample-section">Sample</a>
+                    <a class="nav-link" href="#sample">Sample</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#footer">Contact</a>
@@ -168,7 +50,7 @@
     </header>
     <!-- The Home Section Starts Here -->
     <section id="home">
-        <div class="cover" style="width: 940px;">
+        <div class="cover">
             <div class="cover-photo">
                 <img src="/Images/My-Photo.png" alt="" srcset="">
             </div>
@@ -186,7 +68,7 @@
 
     <!-- The About Section Starts Here -->
     <section id="about">
-      <div class="about" style="width: 940px;">
+      <div class="about">
         <h1>About Myself</h1>
         <div class="about-content">
           <div class="about-writeup">
@@ -205,7 +87,7 @@
 
     <!-- The Services Section Starts Here -->
     <section id="services">
-      <div class="services-content" style="width:940px;">
+      <div class="services-content">
         <h1>Services</h1>
         <div class="services">
           <div class="service">
@@ -240,6 +122,199 @@
               <a class="btn btn-outline-primary rounded-pill position-absolute bottom-0 start-50 translate-middle-x" href="http://">Learn More</a>
             </div>
             <div class="low-box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Services Section Ends Here -->
+
+    <!-- The Skills Section Starts Here -->
+    <section id="skills">
+      <div class="skills-content">
+        <h1>Skills</h1>
+        <div class="skills">
+          <div class="progress-bar">
+            <label for="">Data-Entry</label>
+            <div class="progress" id="Data-Entry">
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Database Management</label>
+            <div class="progress" id="Database">
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">PowerPoint Presentation</label>
+            <div class="progress" id="Presentation">
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">SEO (Search Engine Optimization)</label>
+            <div class="progress" id="SEO">
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Digital Marketing (SMM)</label>
+            <div class="progress" id="SMM">
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Web Design and Development</label>
+            <div class="progress" id="Web">
+              <span>99%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Graphics Design</label>
+            <div class="progress" id="Graphics">
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Photography</label>
+            <div class="progress" id="Photography">
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Audio Editing</label>
+            <div class="progress" id="Audio">
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Videography</label>
+            <div class="progress" id="Videography">
+              <span>70%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Animation</label>
+            <div class="progress" id="Animation">
+              <span>90%</span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <label for="">Multimedia Programimg</label>
+            <div class="progress" id="Multimedia">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Skills Section Ends Here -->
+
+    <!-- The Portfolio Section Starts Here -->
+    <section id="portfolio">
+      <div class="portfolio-content">
+        <h1>My Portfolio</h1>
+        <div class="portfolios">
+          <div class="portfolio">
+            <img src="/Images/Portfolio-1.jpg" alt="">
+          </div>
+          <div class="portfolio">
+            <img src="/Images/Portfolio-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Portfolio Section Ends Here -->
+
+    <!-- The Sample Section Starts Here -->
+    <section id="sample">
+      <div class="sample-content">
+        <h1>My Previous Works</h1>
+        <div class="samples">
+          <div class="sample">
+            <div class="thumbnail">
+              <img src="/Images/110.Logo-RGB.jpg">
+            </div>
+            <div class="description">
+              <h2>Logo Design</h2>
+              <p>Innovative  Logo Design</p>
+              <a class="btn btn-outline-primary rounded-pill" href="http://">Learn More</a>
+            </div>
+          </div>
+          <div class="sample">
+            <div class="thumbnail">
+              <img src="/Images/110.My_Logo.jpg">
+            </div>
+            <div class="description">
+              <h2>Logo Design</h2>
+              <p>Innovative  Logo Design</p>
+              <a class="btn btn-outline-primary rounded-pill" href="http://">Learn More</a>
+            </div>
+          </div>
+          <div class="sample">
+            <div class="thumbnail">
+              <img src="/Images/110.Twin-Peaks_Logo.jpg">
+            </div>
+            <div class="description">
+              <h2>Logo Design</h2>
+              <p>Innovative  Logo Design</p>
+              <a class="btn btn-outline-primary rounded-pill" href="http://">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="question">
+      <div class="question-content">
+        <h1>Frequently asked Questions</h1>
+        <div class="questions accordion accordion-flush" id="accordionFlushExample">
+          <div class="question accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Can I See Some Other Sites You Have Made?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Sure Why Not
+              </div>
+            </div>
+          </div>
+          <div class="question accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Can I See Some Other Logos You Have Created?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Sure Why Not
+              </div>
+            </div>
+          </div>
+          <div class="question accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Can I See Some Other Photos You Have Taken?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Sure Why Not
+              </div>
+            </div>
+          </div>
+          <div class="question accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Can I See Some Other Videos You Have Edited?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Sure Why Not
+              </div>
+            </div>
           </div>
         </div>
       </div>

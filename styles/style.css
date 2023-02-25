@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+}
+
+/* style that applies on Multiple Sections */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover,.about, .services-content, .skills-content,.portfolio-content,.sample-content,.question-content{
+    width: 940px;
+}
+
+    /* green background */
+.cover,.services-content,.portfolio-content,.question-content{
+    background-color: #32a9542d;
+}
+    /* blue background */
+.about,.skills-content,.sample-content{
+    background-color: #3e84f45e;
+}
+
+.about h1 ,.services-content h1, .skills-content h1,.portfolio-content h1,.sample-content h1,.question-content h1{
+    text-align: center;
+    color: #32a953; 
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+/* -------------------------------------------- */
+
+/* Navigation Styles Starts Here */
+.container{
+    width: 940px;
+}
+.navbar-brand{
+    transition: 1s;
+}
+.navbar-brand:hover{
+    -webkit-transform: scaley(-1);
+    transform: scaley(-1);
+}
+.nav-link:hover{
+    color: #3e85f4;
+    text-decoration:3px solid underline;
+}
+/* Navigation Styles Endss Here */
+
+/* Home Section Styles Starts Here */
+.cover{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    height: 50%;
+}
+.cover-photo{
+    width: 50%;
+}
+.cover-photo img{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.introduction{
+    width: 50%;
+    padding-top: 10%;
+}
+/* Home Section Styles Ends Here */
+
+/* About Section Styles Starts Here */
+.about{
+  height: 570px;
+}
+.about-content{
+  display: flex;
+  flex-direction: row; 
+}
+.about-writeup{
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.about-writeup p{
+  font-size: 25px;
+}
+.about-photo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-photo img{
+  width: 80%;
+  border-radius: 50%;
+  background-color: #32a9548f;
+  border: 10px solid #3e85f4;
+}
+/* About Section Styles Ends Here */
+
+/* Service Section Styles Starts Here */
+.services{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.service{
+  position: relative;
+}
+.service .up-box{
+  position: relative;
+  z-index: 2;
+  background-color: #89b2f5;
+  text-align: center;
+  padding: 0 10px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+.service .up-box p{
+  margin-bottom: 40px;
+}
+.service .low-box{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: #3e85f4;
+  width: 100%;
+  height: 100%;
+  transition: 2s;
+}
+.up-box:hover + .low-box{
+  transform: rotate(5deg);
+}
+/* Service Section Styles Ends Here */
+
+/* Slills Section Styles Starts Here */
+.skills{
+    margin:2% 5%;
+}
+
+.skills .progress-bar{
+    margin: 2% 0;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.skills .progress-bar label{
+    text-align: left;
+    font-weight: 600;
+}
+
+.skills .progress-bar .progress{
+    background-color: #32a953;
+    position: relative;
+    justify-content: end;
+}
+
+#Data-Entry{
+    width: 70%;
+}
+#Database{
+    width: 80%;
+}
+#Presentation{
+    width: 90%;
+}
+#SEO{
+    width: 70%;
+}
+#SMM{
+    width: 70%;
+}
+#Web{
+    width: 99%;
+}
+#Graphics{
+    width: 90%;
+}
+#Photography{
+    width: 80%;
+}
+#Audio{
+    width: 80%;
+}
+#Videography{
+    width: 70%;
+}
+#Animation{
+    width: 90%;
+}
+#Multimedia{
+    width: 80%;
+}
+
+.skills .progress-bar .progress>span{
+    position: absolute;
+    padding:0 10px;
+    background: #ffffff;
+}
+/* Slills Section Styles Ends Here */
+
+/* Portfolio Section Styles Starts Here */
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolios .portfolio img{
+    width: 100%;
+    border-radius: 5%;
+}
+/* Portfolio Section Styles Ends Here */
+
+/* Sample Section Styles Starts Here */
+.samples{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.samples .sample .thumbnail img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.samples .sample{
+    text-align: center;
+    background-color: #57d87c;
+    border-radius: 10px;
+}
+
+.samples .sample .description{
+    padding:20px 10px;
+}
+/* Sample Section Styles Ends Here */
+.questions{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.questions
+{
+    height: fit-content;
+}
