@@ -8,8 +8,17 @@ section{
     flex-direction: column;
     align-items: center;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .cover,.about, .services-content, .skills-content,.portfolio-content,.sample-content,.question-content{
     width: 940px;
+}
+
+.footer-content,.container{
+    width: 80%;
 }
 
     /* green background */
@@ -17,7 +26,7 @@ section{
     background-color: #32a9542d;
 }
     /* blue background */
-.about,.skills-content,.sample-content{
+.about,.skills-content,.sample-content,footer{
     background-color: #3e84f45e;
 }
 
@@ -31,9 +40,6 @@ section{
 /* -------------------------------------------- */
 
 /* Navigation Styles Starts Here */
-.container{
-    width: 940px;
-}
 .navbar-brand{
     transition: 1s;
 }
@@ -240,6 +246,8 @@ section{
     padding:20px 10px;
 }
 /* Sample Section Styles Ends Here */
+
+/* Question Section Styles Starts Here */
 .questions{
     width: 100%;
     display: grid;
@@ -250,4 +258,22 @@ section{
 .questions
 {
     height: fit-content;
+}
+/* Question Section Styles Ends Here */
+
+/* Footer Section Styles Starts Here */
+.footer-menus{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu h3{
+    color: #32a953;
 }
