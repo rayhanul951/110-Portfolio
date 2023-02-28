@@ -40,6 +40,19 @@ footer{
 /* -------------------------------------------- */
 
 /* Navigation Styles Starts Here */
+.my-logo img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.my-logo{
+    margin-left: 20px;
+}
+
+.container{
+    align-items: center;
+}
+
 .navbar-brand{
     transition: 1s;
 }
@@ -51,27 +64,43 @@ footer{
     color: #3e85f4;
     text-decoration:3px solid underline;
 }
-/* Navigation Styles Endss Here */
+/* .nav-item hr{
+    width: 100%;
+    border: 2px solid #0d9668;
+    top: 30px;
+} */
+/* Navigation Styles Ends Here */
 
 /* Home Section Styles Starts Here */
 .cover{
     display: flex;
     flex-direction: row;
-    padding-top: 5%;
-    height: 50%;
+    height: 520px;
 }
 .cover-photo{
     width: 50%;
+    position: relative;
 }
 .cover-photo img{
     width: 70%;
     margin-left: 15%;
     margin-bottom: 0;
     padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 .introduction{
-    width: 50%;
-    padding-top: 10%;
+    align-self: center;
+}
+
+.introduction h2{
+    color: #3e85f4;
+    font-weight: 700;
+}
+
+.introduction h1{
+    color: #32a953;
+    font-weight: bold;
 }
 /* Home Section Styles Ends Here */
 
@@ -84,6 +113,7 @@ footer{
   flex-direction: row; 
 }
 .about-writeup{
+  align-self: center;
   width: 50%;
   padding-left: 50px;
   padding-top: 30px;
@@ -102,6 +132,9 @@ footer{
   border-radius: 50%;
   background-color: #32a9548f;
   border: 10px solid #3e85f4;
+}
+.about-photo img:hover{
+  border: 10px solid #3eeef4;
 }
 /* About Section Styles Ends Here */
 
@@ -127,6 +160,10 @@ footer{
 }
 .service .up-box p{
   margin-bottom: 40px;
+}
+
+.service .up-box a{
+    margin-bottom: 10px;
 }
 .service .low-box{
   position: absolute;
@@ -232,14 +269,23 @@ footer{
 }
 .samples .sample .thumbnail img{
     width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border: 40px solid white;
+}
+
+.samples .sample .thumbnail img:hover{
+    border: 0px solid white;
 }
 
 .samples .sample{
     text-align: center;
-    background-color: #57d87c;
+    background-color: #89f8a8;
     border-radius: 10px;
+    border: 2px solid white;
+}
+.samples .sample:hover{
+    border: 2px solid #3e85f4;
 }
 
 .samples .sample .description{
@@ -255,8 +301,7 @@ footer{
     gap: 20px;
     padding: 20px;
 }
-.questions
-{
+.questions{
     height: fit-content;
 }
 /* Question Section Styles Ends Here */
@@ -275,5 +320,122 @@ footer{
 }
 
 .footer-menu h3{
-    color: #32a953;
+    color: #32a953; 
+    /* font-weight: bold; */
+}
+
+footer hr{
+    width: 100%;
+    border: 1px solid #32a953;
+    margin-top: 0;
+}
+/* Footer Section Styles Ends Here */
+
+/*----- Media Query----- */
+@media screen and (max-width:425px) {
+    .cover,.about, .services-content, .skills-content,.portfolio-content,.sample-content,.question-content{
+        width: 350px;
+    }
+
+    .about h1 ,.services-content h1, .skills-content h1,.portfolio-content h1,.sample-content h1,.question-content h1{
+        text-align: center;
+        color: #32a953; 
+        font-weight: bold;
+        margin: 0 0;
+        margin-top: 60px;
+    }
+
+    .cover{
+        display: flex;
+        flex-direction: row;
+        height: 240px;
+    }
+
+    .introduction {
+        align-self: last baseline;
+    }
+
+    .cover >.introduction >h1,h2{
+        font-size: 14px;
+    }
+
+    .cover >.introduction >a{
+        margin-bottom: 10px;
+    }
+
+    .about{
+        height: 270px;
+      }
+      .about-content{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .about-writeup{
+        align-self: center;
+        width: 50%;
+        padding-left: 15px;
+      }
+      .about-writeup p{
+        font-size: 12px;
+      }
+      .about-photo{
+        width: 50%;
+        align-content: center;
+      }
+      .about-photo img{
+        width: 80%;
+        border-radius: 50%;
+        background-color: #32a9548f;
+        border: 5px solid #3e85f4;
+      }
+
+    .services{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .skills .progress-bar{
+        margin: 2% 0;
+        height: 35px;
+        width: 100%;
+        position: relative;
+    }
+
+    .skills .progress-bar .progress>span{
+        font-size: 9px;
+        font-weight: 600;
+    }
+
+    .portfolios{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .samples{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .questions{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .footer-menus{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+        padding: 20px;
+        text-align: center;
+    }
 }
